@@ -17,9 +17,13 @@ TARGET_SCREEN_DENSITY := 378
 
 # HIDL
 ODM_MANIFEST_SKUS += \
-    galahad
+    eos \
+    eos_p \
+    eos_u
 
-ODM_MANIFEST_GALAHAD_FILES := $(DEVICE_PATH)/manifest_galahad.xml
+ODM_MANIFEST_EOS_FILES := $(DEVICE_PATH)/configs/vintf/manifest_eos.xml
+ODM_MANIFEST_EOS_P_FILES := $(DEVICE_PATH)/configs/vintf/manifest_eos_p.xml
+ODM_MANIFEST_EOS_U_FILES := $(DEVICE_PATH)/configs/vintf/manifest_eos_u.xml
 
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/selene.config

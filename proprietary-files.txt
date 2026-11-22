@@ -393,7 +393,7 @@ vendor/bin/pnscr
 vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp-pnscr.conf
 vendor/etc/libnfc-nxp.conf
-vendor/etc/libnfc-nxp_RF.conf
+vendor/libnfc-nxp_RF.conf:vendor/etc/libnfc-nxp_RF.conf
 vendor/etc/sn100u_nfcon.pnscr
 vendor/etc/sn100u_pnx_chr.pnscr
 vendor/etc/sn100u_pnx_cui.pnscr
@@ -411,7 +411,9 @@ vendor/lib64/libviagpsrpc.so
 
 # Secure Element
 vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
-vendor/odm/etc/galahad/android.hardware.secure_element@1.2-service-mediatek.rc:odm/etc/galahad/android.hardware.secure_element@1.2-service-mediatek.rc
+vendor/odm/etc/init/eos/android.hardware.secure_element@1.2-service-mediatek.rc:odm/etc/init/eos/android.hardware.secure_element@1.2-service-mediatek.rc
+vendor/odm/etc/init/eos_p/android.hardware.secure_element@1.2-service-mediatek.rc:odm/etc/init/eos_p/android.hardware.secure_element@1.2-service-mediatek.rc
+vendor/odm/etc/init/eos_u/android.hardware.secure_element@1.2-service-mediatek.rc:odm/etc/init/eos_u/android.hardware.secure_element@1.2-service-mediatek.rc
 
 # Sensors
 vendor/bin/nusensors
