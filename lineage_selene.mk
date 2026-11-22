@@ -9,25 +9,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from device makefile.
-$(call inherit-product, device/xiaomi/lancelot/device.mk)
+$(call inherit-product, device/xiaomi/selene/device.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_lancelot
-PRODUCT_DEVICE := lancelot
+PRODUCT_NAME := lineage_selene
+PRODUCT_DEVICE := selene
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := M2004J19C
+PRODUCT_MODEL := 21061119AG
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-PRODUCT_SYSTEM_NAME := lancelot_global
-PRODUCT_SYSTEM_DEVICE := lancelot
+PRODUCT_SYSTEM_NAME := selene_global
+PRODUCT_SYSTEM_DEVICE := selene
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="lancelot-user 12 SP1A.210812.016 V13.0.4.0.SJCMIXM release-keys" \
-    BuildFingerprint=Redmi/galahad_global/galahad:12/SP1A.210812.016/V13.0.4.0.SJCMIXM:user/release-keys \
+    BuildDesc="selene-user 13 TP1A.220624.014 V14.0.7.0.TKUMIXM release-keys" \
+    BuildFingerprint=Redmi/selene/selene:12/TP1A.220624.014/V14.0.7.0.TKUMIXM:user/release-keys \
     SystemModel=$(PRODUCT_SYSTEM_DEVICE) \
     SystemName=$(PRODUCT_SYSTEM_NAME) \
     ProductModel=$(PRODUCT_SYSTEM_DEVICE) \

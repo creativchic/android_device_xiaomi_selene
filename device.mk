@@ -24,10 +24,10 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
-TARGET_SCREEN_HEIGHT := 2340
+TARGET_SCREEN_HEIGHT := 2400
 
 # Firmware
-RECOVERY_TS_FW_PATH := vendor/xiaomi/lancelot/proprietary/vendor/firmware
+RECOVERY_TS_FW_PATH := vendor/xiaomi/selene/proprietary/vendor/firmware
 
 PRODUCT_COPY_FILES += \
     $(RECOVERY_TS_FW_PATH)/focaltech_mp_fw_huaxing.ini:recovery/root/vendor/firmware/focaltech_mp_fw_huaxing.ini \
@@ -59,11 +59,11 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Shipping API Level
-PRODUCT_SHIPPING_API_LEVEL := 29
+PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/xiaomi/lancelot/lancelot-vendor.mk)
+$(call inherit-product, vendor/xiaomi/selene/selene-vendor.mk)

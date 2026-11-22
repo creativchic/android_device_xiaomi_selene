@@ -14,7 +14,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/xiaomi/lancelot',
+    'device/xiaomi/selene',
     'hardware/mediatek',
     'vendor/xiaomi/mt6768-common',
 ]
@@ -49,7 +49,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'lancelot',
+    'selene',
     'xiaomi',
     blob_fixups=blob_fixups,
     namespace_imports=namespace_imports,
