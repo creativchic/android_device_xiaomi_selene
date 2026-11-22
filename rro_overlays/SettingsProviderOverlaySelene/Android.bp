@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "ApertureOverlayLancelot",
-    product_specific: true,
+    name: "SettingsProviderOverlaySelene",
+    device_specific: true,
 }
